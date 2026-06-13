@@ -1,4 +1,16 @@
 node_modules/
 .env
+.env.local
+.env.production
+
 data.db
+*.sqlite
+*.sqlite3
+
+logs/
 *.log
+
+coverage/
+
+dist/
+build/
