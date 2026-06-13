@@ -1,0 +1,16 @@
+{
+  "name": "ai-booking-bot",
+  "version": "1.0.0",
+  "description": "AI-powered Telegram booking & sales assistant for small businesses (salons, clinics, courses, shops)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "license": "MIT"
+}
