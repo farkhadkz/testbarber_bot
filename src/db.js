@@ -74,5 +74,12 @@ export function saveBooking(chatId, booking) {
 export function getAllBookings() {
   return allBookingsStmt.all();
 }
+export function updateBookingStatus(id, status) {
+  return updateBookingStatusStmt.run(status, id);
+}
+
+export function getBookingById(id) {
+  return getBookingByIdStmt.get(id);
+}
 
 export default db;
