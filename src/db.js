@@ -40,6 +40,13 @@ const insertBookingStmt = db.prepare(
 const allBookingsStmt = db.prepare(
   'SELECT * FROM bookings ORDER BY id DESC'
 );
+const updateBookingStatusStmt = db.prepare(
+  'UPDATE bookings SET status = ? WHERE id = ?'
+);
+
+const getBookingByIdStmt = db.prepare(
+  'SELECT * FROM bookings WHERE id = ?'
+);
 
 export function saveMessage(chatId, role, content) {
   insertMessageStmt.run(chatId, role, content);
